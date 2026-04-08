@@ -488,7 +488,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  justify-content: space-between;
 }
 
 .footer-social-text {
@@ -609,7 +608,7 @@ a {
   z-index: 1000;
   display: none;
 }
-.is-open {
+.modal-overlay.is-open {
   display: flex;
 }
 
