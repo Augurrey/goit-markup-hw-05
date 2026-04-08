@@ -419,16 +419,17 @@
       <div class="footer-subscribe-wrapper">
         <p class="footer-subscribe-text">Subscribe</p>
         <form class="footer-form">
-          <input class="footer-input" type="email" placeholder="E-mail" required />
+          <input class="footer-input" type="email" name="email" placeholder="E-mail" required />
           <button class="footer-submit-button" type="submit"><span class="footer-submit-text">Subscribe</span>
             <svg class="footer-subscribe-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-plane" />
             </svg></button>
         </form>
       </div>
+    </div>
   </footer>
 
-  <modal-overlay class="modal-overlay">
+  <div class="modal-overlay is-open">
     <div class="modal">
       <button class="modal-close-button" type="button">
         <svg class="modal-close-icon" width="8" height="8">
@@ -441,7 +442,7 @@
           <label class="modal-label" for="name">Name</label>
           <div class="modal-input-wrapper">
             <input class="modal-input" type="text" id="name" name="name" required />
-            <svg class="modal-icon" width="18" height="18">
+            <svg class="modal-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-person" />
             </svg>
           </div>
@@ -450,8 +451,8 @@
         <div class="modal-field">
           <label class="modal-label" for="phone">Phone</label>
           <div class="modal-input-wrapper">
-            <input class="modal-input" type="text" id="phone" name="phone" required />
-            <svg class="modal-icon" width="18" height="18">
+            <input class="modal-input" type="tel" id="phone" name="phone" required />
+            <svg class="modal-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-phone" />
             </svg>
           </div>
@@ -461,7 +462,7 @@
           <label class="modal-label" for="email">Email</label>
           <div class="modal-input-wrapper">
             <input class="modal-input" type="email" id="email" name="email" required />
-            <svg class="modal-icon" width="18" height="18">
+            <svg class="modal-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-email" />
             </svg>
           </div>
@@ -474,22 +475,21 @@
         </div>
 
         <div class="modal-checkbox-field">
-          <checkbox class="modal-checkbox">
-            <input class="modal-checkbox-input" type="checkbox" id="consent" name="consent" required />
-            <label class="modal-checkbox-label" for="consent"><span class="check-mark">
-                <svg class="check-mark-icon" width="12" height="9">
-                  <use href="./images/icons.svg#icon-check-mark" />
-                </svg>
-              </span> I accept the terms and
-              conditions of the
-              <a href="#" class="modal-privacy-link">Privacy
-                Policy</a></label>
-          </checkbox>
+          <input class="modal-checkbox-input" type="checkbox" id="consent" name="consent" required />
+          <label class="modal-checkbox-label" for="consent"><span class="check-mark">
+              <svg class="check-mark-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check-mark" />
+              </svg>
+            </span> I accept the terms and
+            conditions of the
+            <a href="#" class="modal-privacy-link">Privacy
+              Policy</a></label>
         </div>
 
-        <button class="modal-submit-button" type="submit">Submit</button>
+        <button class="modal-submit-button" type="submit">Send</button>
       </form>
-  </modal-overlay>
+    </div>
+  </div>
 
 </body>
 
